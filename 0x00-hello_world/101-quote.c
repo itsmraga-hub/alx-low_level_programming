@@ -4,12 +4,12 @@
 /**
 * main - function
 *
-* Return: (0) success
+* Return: (1) success
 */
 int main(void)
 {
 	char sen[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(1, sen, 60);
-	return (0);
+	write(1, sen, 59);
+	return (1);
 }
