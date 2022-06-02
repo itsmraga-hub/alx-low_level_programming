@@ -1,8 +1,11 @@
 #include <stdio.h>
-
-/* A c program that uses puts instead of print. */
+/**
+* main - Main function
+*
+* Return: 0 success
+*/
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle\n");
-	return (0);
+		puts("\"Programming is like building a multilingual puzzle\n");
+		return (0);
 }
