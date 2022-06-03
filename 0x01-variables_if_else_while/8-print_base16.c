@@ -8,9 +8,10 @@
 
 int main(void)
 {
+	int i;
 	char hexa[16] = "0123456789abcedf";
 
-	for (int i = 0; i < 16; i++)
+	for (i = 0; i < 16; i++)
 		putchar(hexa[i]);
 
 	putchar('\n');
