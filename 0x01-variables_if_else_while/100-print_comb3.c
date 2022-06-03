@@ -18,6 +18,8 @@ int main(void)
 			{
 				putchar(i);
 				putchar(j);
+				if (i == 57 && j == 56)
+					break;
 				putchar(',');
 				putchar(' ');
 			}
