@@ -18,15 +18,17 @@ int main(void)
 				for (l = 48; l < 58; l++)
 				{
 					first = (i * 10) + j;
-					second = (k * 10) + i;
+					second = (k * 10) + l;
 
-					if (first < second && (i != j || i != k || i != l || j != k || j != l || k != l))
+					if (first < second)
 					{
 						putchar(i);
 						putchar(j);
 						putchar(' ');
 						putchar(k);
 						putchar(l);
+						if (i == 57 && j == 56 && k == 57 && l == 57)
+							break;
 						putchar(',');
 						putchar(' ');
 					}
