@@ -8,19 +8,20 @@
 
 int main(void)
 {
-	int first = 0;
-	int second = 1;
-	int next, i;
+	unsigned long int first = 0;
+	unsigned long int second = 1;
+	unsigned long int nex;
+	int i;
 
 	for (i = 0; i < 50; i++)
 	{
 		next = first + second;
 		if (i == 49)
 		{
-			printf("%d", next);
+			printf("%lu", next);
 			break;
 		}
-		printf("%d, ", next);
+		printf("%lu, ", next);
 		first = second;
 		second = next;
 

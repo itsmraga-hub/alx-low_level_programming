@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	int i, f, s, next;
+	unsigned long int f, s, next;
+	int i;
 
 	f = 1;
 	s = 2;
@@ -20,10 +21,10 @@ int main(void)
 		next = f + s;
 		if (i == 98)
 		{
-			printf("%d\n", next);
+			printf("%lu\n", next);
 			break;
 		}
-		printf("%d, ", next);
+		printf("%lu, ", next);
 		f = s;
 		s = next;
 	}

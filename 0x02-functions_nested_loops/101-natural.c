@@ -11,7 +11,7 @@ int main(void)
 	int product;
 	int i;
 
-	product = 1;
+	product = 0;
 
 	for (i = 1; i < 1024; i++)
 	{
