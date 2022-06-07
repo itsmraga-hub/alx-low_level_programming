@@ -10,7 +10,7 @@ int main(void)
 {
 	unsigned long int first = 0;
 	unsigned long int second = 1;
-	unsigned long int nex;
+	unsigned long int next;
 	int i;
 
 	for (i = 0; i < 50; i++)
