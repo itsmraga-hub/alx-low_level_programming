@@ -15,6 +15,11 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		next = first + second;
+		if (i == 49)
+		{
+			printf("%d", next);
+			break;
+		}
 		printf("%d, ", next);
 		first = second;
 		second = next;
