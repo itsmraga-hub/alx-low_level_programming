@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	long long int number = 612852475143;
+	unsigned  long int number = 612852475143;
 
-	long long int divisor = 2, ans = 0, largest;
+	unsigned long int divisor = 2, ans = 0, largest;
 
 	while (number != 0)
 	{
@@ -24,7 +24,7 @@ int main(void)
 
 			if (number == 1)
 			{
-				printf("%lld\n", largest);
+				printf("%lu\n", largest);
 				break;
 			}
 		}
