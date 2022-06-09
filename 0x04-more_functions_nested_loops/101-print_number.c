@@ -7,7 +7,27 @@
 
 void print_number(int n);
 {
-	int i;
+	unsigned int m, d, i;
 
 	if (n < 100)
-		_putchar(
+	{
+		_putchar('-');
+		m = -n;
+	}
+	else
+		m = n;
+
+	d = m;
+	i = 1;
+
+	while (d > 9)
+	{
+		d /= 10;
+		i *= 10;
+	}
+
+	for (; i >= 1; i /= 10)
+	{
+		_putchar(((m / i) % 10) + 48);
+	}
+}
