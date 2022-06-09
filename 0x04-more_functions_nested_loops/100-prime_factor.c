@@ -10,7 +10,7 @@ int main(void)
 {
 	unsigned  long int number = 612852475143;
 
-	unsigned long int divisor = 2, ans = 0, largest;
+	unsigned long int divisor = 2, largest;
 
 	while (number != 0)
 	{
