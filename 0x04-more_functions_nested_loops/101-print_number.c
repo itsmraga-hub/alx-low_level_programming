@@ -5,7 +5,7 @@
 * @n: number to print
 */
 
-void print_number(int n);
+void print_number(int n)
 {
 	unsigned int m, d, i;
 
@@ -27,7 +27,5 @@ void print_number(int n);
 	}
 
 	for (; i >= 1; i /= 10)
-	{
 		_putchar(((m / i) % 10) + 48);
-	}
 }
