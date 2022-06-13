@@ -13,7 +13,7 @@ int _atoi(char *s)
 	sign = 1;
 	resp = 0;
 
-	for ((num = 0; !(s[num] >= 48 && s[num] <= 57); num++)
+	for ((num = 0; !(s[num] >= 48 && s[num] <= 57); num++))
 	{
 		if (s[num] == '-')
 			sign *= -1;
