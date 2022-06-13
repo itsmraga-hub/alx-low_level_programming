@@ -8,11 +8,9 @@
  */
 int main(void)
 {
-    char *str;
-    int len;
+	char *str;
 
-    str = "My first strlen!";
-    len = _strlen(str);
-    printf("%d\n", len);
-    return (0);
+	str = "01234556789";
+	puts_half(str);
+	return (0);
 }
