@@ -16,15 +16,15 @@ int _atoi(char *s)
 	pn = 0;
 	m = 1;
 
-	while (*(size + c) != '\0')
+	while (*(s + c) != '\0')
 	{
-		if ((*(size + c) < '0' || *(size + c) > '9') && size > 0)
+		if ((*(s + c) < '0' || *(s + c) > '9') && size > 0)
 			break;
 
-		if (*(size + c) == '-')
+		if (*(s + c) == '-')
 			pn *= -1;
 
-		if ((*(size + c) >= '0') && (*(size + c) <= '9'))
+		if ((*(s + c) >= '0') && (*(s + c) <= '9'))
 		{
 			if (size > 0)
 				m *= 10;
@@ -35,7 +35,7 @@ int _atoi(char *s)
 
 	for (i = c - size; i < c; i++)
 	{
-		oi = oi + ((*(size + i) - 48) * m);
+		oi = oi + ((*(s + i) - 48) * m);
 		m /= 10;
 	}
 
