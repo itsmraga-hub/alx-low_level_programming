@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * cap_string - Capitalizes all characters of a string
@@ -14,7 +15,7 @@ char *cap_string(char *s)
 
 	a = 0;
 
-	while (s[a] != '\0')
+	while (s[a])
 	{
 		i = 0;
 
