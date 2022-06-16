@@ -9,15 +9,14 @@
 
 char *leet(char *s)
 {
-	int a, b, len;
+	int a, b;
 	char r[5] = {'A' 'E', 'O', 'T', 'L'};
 	char n[5] = {'4', '3', '0', '7', '1'};
 
 	a = 0;
-	b = 0;
-	len = 5;
+	b = 0;;
 
-	while (s[a] != '\0')
+	while (s[a])
 	{
 		while (b < 1)
 		{

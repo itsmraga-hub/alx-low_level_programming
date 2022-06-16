@@ -14,7 +14,7 @@ char *cap_string(char *s)
 
 	a = 0;
 
-	while (s[a])
+	while (s[a] != '\0')
 	{
 		i = 0;
 
