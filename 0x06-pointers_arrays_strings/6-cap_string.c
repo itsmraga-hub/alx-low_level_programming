@@ -10,7 +10,7 @@
 
 char *cap_string(char *s)
 {
-	int a, i, c;
+	int a, i;
 	char sp[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
 	a = 0;
