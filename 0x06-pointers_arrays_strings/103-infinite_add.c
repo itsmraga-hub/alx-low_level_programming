@@ -31,9 +31,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	{
 		t = e + f + sum;
 		if (t >= 10)
-			add = t / 10;
+			sum = t / 10;
 		else
-			add = 0;
+			sum = 0;
 		if (t > 0)
 			*(r + bigger) = (t % 10) - 48;
 		else
