@@ -12,7 +12,7 @@ int find_power(int n, int i)
 {
 	if (i % (n / i) == 0)
 	{
-		if (8 * (n / i) == n)
+		if (i * (n / i) == n)
 			return (i);
 		else
 			return (-1);
