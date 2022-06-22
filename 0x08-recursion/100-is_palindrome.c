@@ -9,12 +9,10 @@
 
 int _strlen(char *s)
 {
-	int len;
+	if (*s != '\0')
+		return (1 + _strlen(s + 1));
 
-	while (*s != '\0')
-		len++;
-
-	return (len);
+	return (0);
 }
 /**
 * check - checks if palindrome
@@ -24,16 +22,15 @@ int _strlen(char *s)
 * Return: (1) or (0)
 */
 
-void check(char *s, int i, int len)
+int check(char *s, int i, int len)
 {
-	if (s[i] == s[len])
-	{
-		if (i + 1 == len || i == len)
-			return (1);
+	if (i < len && s[i] == s[len])
+		return (check(s, i + 1, len - 1));
 
-		check(*s, i + 1);
-	}
-	return (0);
+	if (s[i] != s[len])
+		return (0);
+
+	return (1);
 }
 
 /**
@@ -45,8 +42,8 @@ void check(char *s, int i, int len)
 
 int is_palindrome(char *s)
 {
-	int len = _strlen(char *s) - (i + 1);
 	int i = 0;
+	int len = _strlen(s) - 1;
 
-	return (check(s, len, i));
+	return (check(s, i, len));
 }
