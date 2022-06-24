@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* main - program that prints its name
-* @argc: arguments
+* main - prints the number of arguments passed into it
+* @argc: int
 * @argv: array of arguments
 *
 * Return: (0)
@@ -10,6 +10,6 @@
 
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[0]);
+	printf("%d\n", argc);
 	return (0);
 }
