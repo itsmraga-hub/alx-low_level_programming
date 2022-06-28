@@ -11,7 +11,7 @@
 char *_strdup(char *str)
 {
 	char *s;
-	int i = 0, len;
+	int i = 0, len = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -30,6 +30,5 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	*(s + i) = '\0';
 	return (s);
 }
