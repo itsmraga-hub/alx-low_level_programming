@@ -5,7 +5,7 @@
 * on each element of an array
 * @array: array
 * @size: size of the array
-* action: pointer to the function to use
+* @action: pointer to the function to use
 *
 * Return: void
 */
