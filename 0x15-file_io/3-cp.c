@@ -31,11 +31,11 @@ int main(int argc, char **argv)
 
 void copy_file(const char *src, const char *dest)
 {
-	int fd, tfd, r;
+	int ofd, tfd, r;
 	char b[1024];
 
-	fd = open(src, O_RDONLY);
-	if (!src || fd == -1)
+	ofd = open(src, O_RDONLY);
+	if (!src || ofd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
@@ -43,7 +43,7 @@ void copy_file(const char *src, const char *dest)
 
 	tfd = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	while ((r = read(fd, b, r) != r || tfd == -1))
+	while ((r = read(ofd, b, 1024)) > 0)
 	{
 		if (write(tfd, b, r) != r || tfd == -1)
 		{
@@ -57,9 +57,9 @@ void copy_file(const char *src, const char *dest)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
-	if (close(fd) == -1)
+	if (close(ofd) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", ofd);
 		exit(100);
 	}
 
